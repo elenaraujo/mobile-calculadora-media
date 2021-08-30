@@ -11,7 +11,5 @@ Projeto de calculadora feito utilizando o Android Studio com a linguagem Java, c
 <img src="https://i.imgur.com/r3U5Ixs.jpg" alt="Print de tela do aplicativo 5" height="700"><img src="https://i.imgur.com/xsgEWrF.jpg" alt="Print de tela do aplicativo 6" height="700">
 
 
-### ⚙ Versão das ferramentas
+### ⚙ Versão da ferramenta
 Android Studio Arctic Fox | 2020.3.1 Patch 1
-Build #AI-203.7717.56.2031.7621141, built on August 7, 2021
-Runtime version: 11.0.10+0-b96-7249189 amd64
