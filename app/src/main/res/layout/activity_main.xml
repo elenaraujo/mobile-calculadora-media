@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleCalculadoraMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="CALCULADORA DE MÉDIA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputA1"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/labelA1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelA1" />
+
+    <EditText
+        android:id="@+id/inputA3"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/labelA3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelA3" />
+
+    <TextView
+        android:id="@+id/labelA3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="209dp"
+        android:text="Nota da A3:"
+        app:layout_constraintEnd_toStartOf="@+id/inputA3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleCalculadoraMedia" />
+
+    <TextView
+        android:id="@+id/labelResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="45dp"
+        android:text="Nota final:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="40dp"
+        android:onClick="calcular"
+        android:text="Calcular"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAviso" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:onClick="limpar"
+        android:text="Limpar"
+        app:backgroundTint="?attr/colorError"
+        app:layout_constraintStart_toEndOf="@+id/calculate"
+        app:layout_constraintTop_toBottomOf="@+id/textAviso" />
+
+    <EditText
+        android:id="@+id/inputA2"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/labelA2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelA2" />
+
+    <TextView
+        android:id="@+id/labelA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="129dp"
+        android:text="Nota da A2:"
+        app:layout_constraintEnd_toStartOf="@+id/inputA2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleCalculadoraMedia" />
+
+    <TextView
+        android:id="@+id/labelCampoObrigatorio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:text="Campo obrigatório"
+        android:textColor="#C6C1C1"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/inputA2"
+        app:layout_constraintStart_toStartOf="@+id/inputA2"
+        app:layout_constraintTop_toBottomOf="@+id/inputA2" />
+
+    <TextView
+        android:id="@+id/labelA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="Nota da A1:"
+        app:layout_constraintEnd_toStartOf="@+id/inputA1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleCalculadoraMedia" />
+
+    <TextView
+        android:id="@+id/labelCampoObrigatorio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:text="Campo obrigatório"
+        android:textColor="#C6C1C1"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/inputA1"
+        app:layout_constraintStart_toStartOf="@+id/inputA1"
+        app:layout_constraintTop_toBottomOf="@+id/inputA1" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="45dp"
+        android:textColor="#673AB7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate" />
+
+    <TextView
+        android:id="@+id/textAviso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#F40505"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputA3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
