@@ -1,5 +1,5 @@
 ## 📚 Sobre
-Projeto de calculadora feito utilizando o Android Studio com a linguagem Java, com regras de cálculo de nota de acordo com o que a Universidade Veiga de Almeida utiliza para na modalidade EaD.
+Projeto de calculadora feito utilizando o Android Studio com a linguagem Java, com regras de cálculo de nota de acordo com o que a Universidade Veiga de Almeida utiliza na modalidade EaD.
 
 ## 📜 Regras
 <img src="https://i.imgur.com/NccZtQZ.jpg" alt="Regras de cálculo" width="700">
